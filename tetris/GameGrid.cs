@@ -1,4 +1,4 @@
-﻿namespace tetris
+﻿namespace Tetris
 {
     public class GameGrid
     {
