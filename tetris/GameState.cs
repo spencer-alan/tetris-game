@@ -30,7 +30,7 @@
         {
             foreach (Position p in CurrentBlock.TilePositions())
             {
-                if (!GameGrid.IsEmpty(p.Row, c.Column))
+                if (!GameGrid.IsEmpty(p.Row, p.Column))
                 {
                     return false;
                 }
@@ -81,7 +81,7 @@
 
         private bool IsGameOver()
         {
-            return !(GameGrid.IsRowEmpty(0) && GameGrid.IsRowEmpty(1);
+            return !(GameGrid.IsRowEmpty(0)) && GameGrid.IsRowEmpty(1);
         }
 
         private void PlaceBlock()
