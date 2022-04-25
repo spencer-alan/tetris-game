@@ -28,7 +28,7 @@ namespace Tetris
 
 		public void RotateCW()
 		{
-			rotationState = (rotationState + 1) % Tiles.Length - 1;
+			rotationState = (rotationState + 1) % Tiles.Length;
 		}
 	
 		public void RotateCCW()
